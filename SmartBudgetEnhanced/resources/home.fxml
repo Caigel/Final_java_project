@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.HomeController">
+
+    <top>
+        <ToolBar>
+            <Label text="SmartBudget — Home" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Label text="Theme"/>
+            <ToggleButton fx:id="toggleTheme" text="🌙"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <VBox spacing="16" alignment="CENTER">
+            <padding>
+                <Insets top="40" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Welcome!" style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+            <Label text="Choose where to go:" style="-fx-font-size:14px;"/>
+
+            <HBox spacing="20" alignment="CENTER">
+                <Button text="Transactions" prefWidth="200" prefHeight="60" onAction="#gotoTransactions"/>
+                <Button text="Reports" prefWidth="200" prefHeight="60" onAction="#gotoReports"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

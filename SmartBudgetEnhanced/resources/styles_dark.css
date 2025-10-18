@@ -1,0 +1,169 @@
+/* ====== DARK THEME ====== */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #0f172a;
+    -fx-text-fill: #e5e7eb;
+}
+
+/* General Labels & Text */
+.label {
+    -fx-text-fill: #e5e7eb;
+}
+
+/* Toolbars */
+.tool-bar {
+    -fx-background-color: #111827;
+    -fx-border-color: #1f2937;
+}
+
+/* Buttons */
+.button {
+    -fx-background-radius: 8;
+    -fx-background-color: #374151;
+    -fx-text-fill: #e5e7eb;
+    -fx-font-weight: 600;
+}
+.button:hover {
+    -fx-background-color: #4b5563;
+}
+.button:focused {
+    -fx-border-color: #60a5fa;
+}
+
+/* TextFields, DatePicker, ChoiceBox, ComboBox */
+.text-field,
+.date-picker,
+.choice-box,
+.combo-box,
+.text-input {
+    -fx-background-color: #1f2937;
+    -fx-text-fill: #e5e7eb;
+    -fx-prompt-text-fill: #9ca3af;
+    -fx-border-color: #374151;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+.text-field:focused,
+.date-picker:focused,
+.choice-box:focused,
+.combo-box:focused {
+    -fx-border-color: #60a5fa;
+}
+
+/* ============================
+   ChoiceBox / ComboBox Styling
+   ============================ */
+
+/* Main closed box */
+.choice-box, .combo-box {
+    -fx-background-color: #1f2937;
+    -fx-text-fill: #e5e7eb;
+    -fx-mark-color: #e5e7eb; /* arrow color */
+    -fx-border-color: #374151;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+.choice-box:hover, .combo-box:hover {
+    -fx-background-color: #2a3448;
+}
+.choice-box:focused, .combo-box:focused {
+    -fx-border-color: #60a5fa;
+}
+
+/* The popup list */
+.choice-box .menu-item,
+.combo-box-popup .list-view,
+.combo-box-popup .list-cell {
+    -fx-background-color: #1f2937;
+    -fx-text-fill: #e5e7eb;
+}
+
+/* Highlighted (hovered) item */
+.choice-box .menu-item:focused,
+.combo-box-popup .list-cell:focused {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+/* Borders of popup menu */
+.choice-box .context-menu,
+.combo-box-popup {
+    -fx-background-color: #1f2937;
+    -fx-border-color: #374151;
+}
+
+
+/* TableView */
+.table-view {
+    -fx-base: #1f2937;
+    -fx-control-inner-background: #1f2937;
+    -fx-background-color: #1f2937;
+    -fx-table-cell-border-color: #374151;
+    -fx-table-header-border-color: #374151;
+    -fx-text-background-color: #e5e7eb;
+}
+.table-view .column-header-background {
+    -fx-background-color: #111827;
+}
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #111827;
+    -fx-text-fill: #e5e7eb;
+}
+.table-row-cell {
+    -fx-background-color: #1f2937;
+}
+.table-row-cell:odd {
+    -fx-background-color: #111827;
+}
+.table-row-cell:selected {
+    -fx-background-color: #2563eb;
+}
+
+/* TitledPane */
+.titled-pane > .title {
+    -fx-background-color: #1f2937;
+    -fx-text-fill: #e5e7eb;
+    -fx-font-weight: 700;
+}
+
+/* Scrollbars */
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+.thumb {
+    -fx-background-color: #4b5563;
+}
+.thumb:hover {
+    -fx-background-color: #6b7280;
+}
+
+/* Charts */
+.chart-legend,
+.chart-title {
+    -fx-text-fill: #e5e7eb;
+}
+.chart-pie-label {
+    -fx-fill: #e5e7eb;
+}
+.axis-label,
+.axis-tick-mark,
+.axis {
+    -fx-text-fill: #e5e7eb;
+}
+
+/* Alerts and Dialogs */
+.dialog-pane {
+    -fx-background-color: #1f2937;
+}
+.dialog-pane .label {
+    -fx-text-fill: #e5e7eb;
+}
+.dialog-pane .button {
+    -fx-background-color: #374151;
+    -fx-text-fill: #e5e7eb;
+}
+.dialog-pane .button:hover {
+    -fx-background-color: #4b5563;
+}

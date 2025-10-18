@@ -1,0 +1,9 @@
+id,date,amount,category,description,type
+1,2025-10-18,100.0,Entertainment,lasertag,Expense
+2,2025-10-18,234.0,Entertainment,poop bucket,Expense
+3,2025-10-18,182.0,Entertainment,Hog rider,Expense
+4,2025-10-18,10000.0,Income,Paycheck,Income
+5,2025-10-18,10000.0,Paystub,Paycheck,Income
+6,2025-10-18,900.0,Car payment,car payment for my honda,Expense
+7,2025-10-18,400.0,Car Insurance,insurance,Expense
+8,2025-10-18,6000.0,Rent,Rent,Expense

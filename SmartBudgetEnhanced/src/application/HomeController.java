@@ -1,0 +1,5 @@
+package application;
+
+import javafx.fxml.*; import javafx.scene.*; import javafx.scene.control.ToggleButton; import javafx.scene.layout.BorderPane; import java.io.File; import java.net.URL;
+
+public class HomeController { @FXML private BorderPane root; @FXML private ToggleButton toggleTheme; @FXML public void initialize(){ toggleTheme.setSelected(Theme.isDark()); toggleTheme.selectedProperty().addListener((o,ov,nv)->{ Theme.setDark(nv); Theme.apply(root.getScene()); }); } @FXML private void gotoTransactions(){ try{ URL f=new File("resources/main.fxml").toURI().toURL(); Parent page=FXMLLoader.load(f); root.getScene().setRoot(page); Theme.apply(root.getScene()); }catch(Exception e){ e.printStackTrace(); } } @FXML private void gotoReports(){ try{ URL f=new File("resources/reports.fxml").toURI().toURL(); Parent page=FXMLLoader.load(f); root.getScene().setRoot(page); Theme.apply(root.getScene()); }catch(Exception e){ e.printStackTrace(); } } }
